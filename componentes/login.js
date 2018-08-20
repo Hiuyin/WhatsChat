@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { View, StyleSheet,Text,TextInput } from 'react-native';
 class login extends Component {
   render() {
-    return <View style={{flex: 1,flexDirection: 'column'}}>
-                <View style={{backgroundColor: 'powderblue'}} />
-                
-                
+    return <View style={{flex: 1,flexDirection: 'column',backgroundColor: 'powderblue'}}>
                 <Text style={styles.title}>WHATSCHAT</Text>
-                
+                <Text style={styles.loginText}>Seu numero</Text>
 
            </View>;
   }
@@ -19,8 +16,16 @@ const styles = StyleSheet.create({
         marginLeft: offset,
         fontSize: offset*1.5,
         fontWeight: 'bold',
-        color: 'blue',
-        fontFamily: 'https://fonts.googleapis.com/css?family=Open+Sans',
+        color: 'steelblue',
+        textAlign: 'center',
+        
+
+    },
+    loginText:{
+        marginTop: offset,
+        marginLeft: offset,
+        fontSize: offset,
+        textAlign: 'center',
 
     }
 });
